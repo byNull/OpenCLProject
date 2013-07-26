@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Test", "Test\Test.vcproj", "{19A8111F-D006-428E-A432-05A9DBB15171}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MatrixVectorMultiply", "MatrixVectorMultiply\MatrixVectorMultiply.vcproj", "{05E445DD-0D8A-4AC9-8AC1-B31BDB770E0B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{19A8111F-D006-428E-A432-05A9DBB15171}.Debug|Win32.ActiveCfg = Debug|Win32
+		{19A8111F-D006-428E-A432-05A9DBB15171}.Debug|Win32.Build.0 = Debug|Win32
+		{19A8111F-D006-428E-A432-05A9DBB15171}.Release|Win32.ActiveCfg = Release|Win32
+		{19A8111F-D006-428E-A432-05A9DBB15171}.Release|Win32.Build.0 = Release|Win32
+		{05E445DD-0D8A-4AC9-8AC1-B31BDB770E0B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{05E445DD-0D8A-4AC9-8AC1-B31BDB770E0B}.Debug|Win32.Build.0 = Debug|Win32
+		{05E445DD-0D8A-4AC9-8AC1-B31BDB770E0B}.Release|Win32.ActiveCfg = Release|Win32
+		{05E445DD-0D8A-4AC9-8AC1-B31BDB770E0B}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
