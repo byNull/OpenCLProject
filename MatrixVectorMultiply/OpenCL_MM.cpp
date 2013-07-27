@@ -6,6 +6,7 @@
 
 //extern "C" int R_Size;
 //extern "C" int C_Size;
+extern const int clDeviceType[];
 
 OpenCL_MM::OpenCL_MM(void)
 {
@@ -337,7 +338,29 @@ OpenCL_MM::~OpenCL_MM(void)
 
 }
 
-//TypeDeviceInfo OpenCL_MM::getSpecifiedDeviceInfo(cl_device_id dev, cl_device_info devInfo)
-//{
-//
-//}
+TypeDeviceInfoValue OpenCL_MM::getSpecifiedDeviceInfo(cl_device_id dev, cl_device_info devInfo)
+{
+	TypeDeviceInfoValue  value;
+	int                  index = -1;
+	int                  len   = -1;
+	void                *pv    = NULL;
+
+	for (int i = 0; i < sizeof(clDeviceType)/sizeof(int); i++)	{
+		if(clDeviceType[i] == devInfo){
+			index = i;
+			break;
+		}
+	}
+
+	value.setCurrentIndex(index);
+	len = value.getCurrentSize();
+	pv  = new char[len];
+
+	clGetDeviceInfo(dev, devInfo, len, pv, NULL);
+
+	value.setCurValue(index, pv);
+
+	if(pv != NULL) {delete[] pv;	pv = NULL;}
+
+	return value;
+}

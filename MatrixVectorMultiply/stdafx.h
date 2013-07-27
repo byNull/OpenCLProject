@@ -18,6 +18,8 @@
 #include <time.h>
 #include <boost/timer.hpp>
 #include <boost/progress.hpp>
+#include <CL/cl.h>
+#include <memory.h>
 
 
 #pragma warning(disable : 4996)
